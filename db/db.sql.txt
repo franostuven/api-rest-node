@@ -1,0 +1,19 @@
+CREATE DATABASE IF NOT EXISTS company;
+
+USE company;
+
+CREATE TABLE employees (
+	id INT(11) NOT NULL AUTO_INCREMENT,
+    name VARCHAR(45) DEFAULT NULL,
+    salary INT(11) DEFAULT NULL,
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE users (
+	idUser INT(11) NOT NULL AUTO_INCREMENT,
+    mail VARCHAR(120) NOT NULL,
+    password VARCHAR(11) NOT NULL,
+    PRIMARY KEY(id)
+);
+
+DESCRIBE employees;
