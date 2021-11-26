@@ -1,5 +1,4 @@
 const express = require('express');
-
 const app = express();
 
 //-----------------------------------------
@@ -21,7 +20,7 @@ app.set('port',  process.env.PORT ||  3000);  //process..... es para que tome el
 // Middlewares (prog. antes de que se ejecuten las rutas )
 app.use(express.json());   //convierte los modulo de json cuando los reciba
 
-// Routes (rutas para que se lleguen desde la web)
+// Routes (rutas para que se lleguen desde la web) al hacer el require y no usar rutas, toma la raiz /
 app.use(require('./routes/employees'));
 
 // Routes (ruta de Loguin y Registro)

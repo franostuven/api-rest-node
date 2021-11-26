@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-var app = express()
+let app = express()
 
 // constraseña
 const bcrypt = require('bcrypt');
